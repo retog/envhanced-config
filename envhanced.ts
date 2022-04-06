@@ -15,8 +15,6 @@ function resolve(expression: string) {
   const strMatch = alts[0].match(strRe);
   const varName = strMatch ? strMatch[1] : alts[0];
   const varValue = Deno.env.get(varName);
-  console.log(expression);
-  console.log(varValue);
   const value = varValue ?? alts[1];
   return strMatch ? value ? `"${value}"` : "null" : value;
 }
