@@ -7,7 +7,7 @@ configurations for which a structured config file is more suited.
 Enhanced-Config allows you to combine both approaches by allowing Environment
 variables in JSON files.
 
-## Example Envhanced Config File:
+## Example Envhanced Config File
 
 ```
 {
@@ -21,7 +21,7 @@ variables in JSON files.
 }
 ```
 
-## Parsing a file:
+## Parsing a file
 
 ```
 import envhanced from "./envhanced.ts";
@@ -29,4 +29,4 @@ const parsed = envhanced(config);
 ```
 ## Test 
 
-See [test.js](test.js)
+See [test.ts](test.ts)
